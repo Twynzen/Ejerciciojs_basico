@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Scope Javascript</title>
+  </head>
+  <body>
+    <script>
+
+
+    (function () { //funcion auto invocada
+
+          var var_global = "esta es global";
+
+          var miFuncion = function(){
+            var var_local = "Esta es local"; // si le quito el var se vuelve global
+
+            var local_fun = function(){
+              var var_local = "es local dentro de funcion local";//busca en la primera funcion y luego la que sigue hasta lo global
+              alert(var_local);// no puedo buscar hacia dentro las variables
+
+            }
+          local_fun();
+
+          }
+          miFuncion();
+          alert(var_global);
+
+
+    }())
+
+    </script>
+
+  </body>
+</html>
