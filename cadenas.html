@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Metodos para cadenas de texto</title>
+  </head>
+  <body>
+    <script>
+
+    var text = "Daniel Castiblanco";
+    //var newTexto= text.length; //sirve para contacr caracteres también
+    //var newTexto= text.substring(1); //acorta o elimina los caracteres indicados
+    //var newTexto= text.substr(0, 8);// salva los caracteres seleccionados
+
+    var newTexto= text.indexOf("a") ;//busca la primera posicion de la letra seleccionada
+    var newTexto2= text.indexOf("a", newTexto);//indicamos la posicion desde donde empezará a buscar
+
+    var nuwTexto3 = texto.replace(text, "Cambio el texto")//reemplazamos la cadena de texto
+
+    var nuwTexto3 = texto.toUpperCase();//transformamos nuestro texto a mayuscula
+    var nuwTexto3 = texto.toLowerCase();//transformamos nuestro texto a minuscula
+    document.write(newTexto2);
+
+    </script>
+
+  </body>
+</html>
